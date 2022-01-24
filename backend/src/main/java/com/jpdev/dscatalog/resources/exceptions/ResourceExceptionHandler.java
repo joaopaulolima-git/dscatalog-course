@@ -24,7 +24,7 @@ public class ResourceExceptionHandler {
 		err.setError("Resource not found");
 		err.setMessage(e.getMessage());
 		err.setPath(request.getRequestURI());
-		return ResponseEntity.status(status).body(err);
+		return ResponseEntity.status(status).body(err); 
 	}
 	
 	@ExceptionHandler(DatabaseException.class)
